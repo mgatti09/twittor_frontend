@@ -64,13 +64,6 @@ export default function Home(props) {
 }
 
 function formatModel(tweets) {
-  const tweetModel = {
-    _id: "",
-    userid: "",
-    message: "",
-    date: "",
-  };
-
   const tweetsModel = tweets.map((tweet) => {
     return {
       _id: tweet._id,
