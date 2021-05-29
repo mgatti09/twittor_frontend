@@ -1,0 +1,44 @@
+@import "../../scss/index.scss";
+
+.info-user {
+  margin: 20px;
+
+  * {
+    margin: 0;
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+    fill: $font-grey;
+  }
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .email {
+    font-size: 12px;
+    color: $font-grey;
+  }
+  .description {
+    margin: 10px 0;
+    white-space: pre-line; /*Para que respete los CR que tenga el texto de lo contrario todo queda en una línea */
+  }
+  .more-info {
+    display: flex;
+    align-items: center;
+    p,
+    a {
+      color: $font-grey;
+      padding-right: 20px;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    a {
+      color: $primary;
+    }
+  }
+}
